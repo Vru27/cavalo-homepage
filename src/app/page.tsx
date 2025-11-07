@@ -9,6 +9,10 @@ import VehicleTypesSection from "@/components/Vehicle-category/vehicle-category"
 import TestimonialsSection from "@/components/Testimonials/customer-testimonials";
 import Header from "@/components/Header/header";
 import Hero from "@/components/Hero/hero";
+import { LatestBlog } from "@/components/Latest-blog/latest-blog";
+import FAQsSection from "@/components/FAQs/faqs";
+import Footer from "@/components/Footer/footer";
+
 
 export default function Home() {
   return (
@@ -24,6 +28,9 @@ export default function Home() {
       <WhyChooseUs/>
       <VehicleTypesSection/>
       <TestimonialsSection/>
+      <LatestBlog/>
+      <FAQsSection/>
+      <Footer/>
     </main>
   );
 }

@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   reactCompiler: true,
   images: {
-    remotePatterns: [{ hostname: "kennyperezlaw.com" }],
+    domains: ["kennyperezlaw.com", "c8.alamy.com"],
   },
 };
 
