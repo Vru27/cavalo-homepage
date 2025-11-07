@@ -11,7 +11,7 @@ export default function FindTrucks() {
         {/* Diagonal stripes */}
         <div className="absolute inset-0">
           {/* Each stripe is a skewed div */}
-          <div className="absolute top-0 left-0 w-20 h-full bg-[#FDD835] opacity-40 transform -skew-x-12"></div>
+          <div className="absolute top-0 left-0 w-20 h-full bg-[#FDD835] opacity-40 transform -skew-x-12"> </div>
           <div className="absolute top-0 left-64 w-20 h-full bg-[#FDD835] opacity-30 transform -skew-x-12"></div>
           <div className="absolute top-0 right-96 w-20 h-full bg-[#FDD835] opacity-40 transform -skew-x-12"></div>
           <div className="absolute top-0 right-32 w-56 h-full bg-[#FDD835] opacity-30 transform -skew-x-12"></div>
