@@ -76,7 +76,7 @@ export function ProductCard({ product }: ProductCardProps) {
 
         {/* See Details Link */}
         <a
-          href="#"
+          href="/see-details"
           className="text-lg font-semibold text-gray-900 hover:text-yellow-400 transition-colors inline-flex items-center gap-1"
         >
           See details →

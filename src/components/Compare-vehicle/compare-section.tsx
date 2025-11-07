@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import { Calendar, Zap, Package, ArrowRight } from "lucide-react"
-
+import Link from "next/link"
 interface Vehicle {
   name: string
   model: string
@@ -93,10 +93,12 @@ export function VehicleComparison({ vehicle1, vehicle2 }: VehicleComparisonProps
             </p>
 
             {/* Compare Button */}
+            <Link href="/compare-vehicle" passHref>
             <button className="flex items-center gap-2 text-yellow-500 hover:text-yellow-600 font-semibold text-sm transition-colors">
               Compare Vehicle
               <ArrowRight className="w-4 h-4" />
             </button>
+            </Link>
           </div>
 
           {/* Vehicle 2 Details */}

@@ -55,7 +55,7 @@ export function Blog({ product }: BlogCardProps) {
 
                 {/* Read More Link */}
                 <a
-                    href="#"
+                    href="/see-details"
                     className="inline-flex items-center gap-2 text-[#f59e0b] font-semibold hover:gap-3 transition-all"
                 >
                     Read more

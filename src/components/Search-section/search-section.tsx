@@ -83,7 +83,7 @@ export default function SearchSection() {
           </div>
 
           {/* Search Button */}
-          <Button className="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-8 py-3.5 h-auto w-45">
+          <Button className="cursor-pointer bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-8 py-3.5 h-auto w-45">
             <Search className="w-4 h-4" />
             Search Vehicle
           </Button>

@@ -79,7 +79,7 @@ export function LatestBlog() {
 
                     <div className="flex items-center">
                         <a
-                            href="#"
+                            href="/see-details"
                             className="flex items-center gap-1 absolute right-0 text-sm font-medium text-gray-700 hover:text-gray-900"
                         >
                             See All

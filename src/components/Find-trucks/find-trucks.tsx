@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image";
+import Link from "next/link";
 
 export default function FindTrucks() {
   return (
@@ -31,9 +32,11 @@ export default function FindTrucks() {
               <p className="text-lg text-gray-800 mb-2 font-medium ml-20">Not sure what you're looking for?</p>
               <p className="text-lg text-gray-800 mb-8 ml-20">Answer a few questions to discover the best fit for you.</p>
 
+              <Link href="/start-quiz" passHref>
               <Button className="bg-[#FBC02D] text-gray-900 hover:bg-[#F9A825] font-semibold px-8 py-6 text-base rounded-lg ml-20">
                 Start Quiz <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
+              </Link>
             </div>
 
             {/* Right Side - Placeholder for image */}
