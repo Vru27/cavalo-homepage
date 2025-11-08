@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from "react"
 import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react"
 import { ProductCard } from "./product-card"
-import { Truck } from 'lucide-react';
+import Categories from "../Categories/categories";
 
 interface Product {
     id: number
@@ -17,8 +17,6 @@ interface Product {
     price: number
     image: string
 }
-
-const categories = ["Trucks", "Pickup Trucks", "Tipper", "Trailer", "Machinery"]
 
 const products: Product[] = [
     {
@@ -72,7 +70,6 @@ const products: Product[] = [
 ]
 
 export function BestSellingSection() {
-    const [activeCategory, setActiveCategory] = useState("Trucks")
     const [canScrollLeft, setCanScrollLeft] = useState(false)
     const [canScrollRight, setCanScrollRight] = useState(true)
     const scrollContainerRef = useRef<HTMLDivElement>(null)
@@ -123,27 +120,7 @@ export function BestSellingSection() {
                 </div>
 
                 {/* Category Tabs */}
-                <div className="flex justify-around mb-8 pb-2 mt-8">
-                    {categories.map((category) => (
-                        <button
-                            key={category}
-                            onClick={() => setActiveCategory(category)}
-                            className={`flex gap-2 items-center justify-center px-6 py-3 rounded-full transition-all duration-300 
-        ${activeCategory === category
-                                    ? "bg-gray-900 text-white shadow-md"
-                                    : "text-gray-700 hover:bg-gray-900 hover:text-white"
-                                }`}
-                        >
-                            <Truck
-                                size={22}
-                                className={`mb-1 transition-colors $? "text-white"
-        : "text-gray-700 group-hover:text-white"
-                                    }`}
-                            />
-                            <span className="text-sm font-medium">{category}</span>
-                        </button>
-                    ))}
-                </div>
+                <Categories />
 
                 {/* Products Carousel */}
                 <div className="relative group">

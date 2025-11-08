@@ -61,9 +61,8 @@ export function VehicleComparison({ vehicle1, vehicle2 }: VehicleComparisonProps
 
         {/* Vehicle Details Section */}
         <div className="grid grid-cols-2 relative">
-            <div className="absolute left-1/2 top-0 bottom-0 w-px bg-gray-400 -translate-x-1/2"></div>
           {/* Vehicle 1 Details */}
-          <div className="p-6">
+          <div className="p-6 border-r-2 border-gray-200">
             <h3 className="text-lg font-bold text-gray-900 mb-1">
               {vehicle1.name}
             </h3>

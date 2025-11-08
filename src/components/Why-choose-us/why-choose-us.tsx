@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { Award, Handshake, Users, HandPlatter  } from "lucide-react"
+import { Award, Handshake, Users, DollarSign } from "lucide-react"
 
 interface Card {
   icon: React.ReactNode
@@ -18,7 +18,12 @@ const cards: Card[] = [
       "Every vehicle in our inventory undergoes rigorous inspections to ensure top-notch performance and safety.",
   },
   {
-    icon: <HandPlatter  className="w-12 h-12" />,
+    icon: (
+      <div className="relative">
+        <Award className="w-12 h-12" />
+        <DollarSign className="w-6 h-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+      </div>
+    ),
     title: "Competitive Pricing",
     description:
       "We offer the best prices in the market, providing great value for your investment without compromising on quality.",
@@ -59,11 +64,11 @@ export function WhyChooseUs() {
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {cards.map((card, index) => (
             <div
               key={index}
-              className="bg-white p-8 flex flex-col items-center text-center hover:shadow-lg transition-shadow"
+              className="bg-white p-8 flex flex-col items-center text-center hover:shadow-lg transition-shadow min-h-[400px]"
             >
               {/* Icon */}
               <div className="mb-6 text-gray-800">{card.icon}</div>
@@ -72,10 +77,10 @@ export function WhyChooseUs() {
               <h3 className="text-[22px] font-bold text-gray-900 mb-4">{card.title}</h3>
 
               {/* Description */}
-              <p className="text-gray-600 text-sm leading-relaxed mb-6">{card.description}</p>
+              <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-1">{card.description}</p>
 
               {/* Yellow Accent Line */}
-              <div className="w-12 h-1 bg-yellow-400"></div>
+              <div className="w-12 h-1 bg-yellow-400 mt-auto"></div>
             </div>
           ))}
         </div>

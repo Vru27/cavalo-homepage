@@ -31,11 +31,11 @@ export default function Brands() {
         {firstRow.map((src, index) => (
           <Image
             key={index}
-            width={100}
-            height={100}
+            width={130}
+            height={130}
             alt={`Brand ${index + 1}`}
             src={src}
-            className="border border-gray-200 px-4 py-2 rounded-[6px] transition-transform duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:border-yellow-400"
+            className="border border-gray-200 px-4 py-2 rounded-[3px] transition-transform duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:border-yellow-400"
           />
         ))}
       </div>
@@ -44,11 +44,11 @@ export default function Brands() {
         {secondRow.map((src, index) => (
           <Image
             key={index + 6}
-            width={100}
-            height={100}
+            width={130}
+            height={130}
             alt={`Brand ${index + 7}`}
             src={src}
-            className="border border-gray-200 px-4 py-2 rounded-[6px] transition-transform duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:border-yellow-400"
+            className="border border-gray-200 px-4 py-2 rounded-[3px] transition-transform duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:border-yellow-400"
           />
         ))}
       </div>

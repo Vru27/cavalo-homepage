@@ -6,8 +6,7 @@ import { Truck, Bus, Tractor } from 'lucide-react';
 import { MdOutlineElectricRickshaw } from "react-icons/md";
 import { GiMineTruck } from "react-icons/gi";
 import { useEffect, useRef, useState } from "react";
-
-
+import Link from "next/link";
 export default function Header() {
   const locations = [
     'Delhi NCR',
@@ -190,7 +189,7 @@ export default function Header() {
               {label}
               <ChevronDown
                 size={14}
-                className="mt-[1px] text-gray-500 group-hover:text-gray-800 transition-transform duration-200 group-hover:rotate-180"
+                className="mt-px text-gray-500 group-hover:text-gray-800 transition-transform duration-200 group-hover:rotate-180"
               />
             </button>
           ))}
@@ -206,9 +205,11 @@ export default function Header() {
             />
             <Search className="absolute right-3 top-2.5 w-4 h-4 text-gray-700" />
           </div>
+          <Link href="/signup" passHref>
           <Button className="cursor-pointer bg-yellow-500 hover:bg-yellow-600 text-white rounded-full font-semibold whitespace-nowrap">
             Login / Sign up
           </Button>
+          </Link>
         </div>
       </div>
     </header>

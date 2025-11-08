@@ -70,14 +70,14 @@ export function ProductCard({ product }: ProductCardProps) {
           <p className="text-xs text-gray-500 mb-1">EMI Started from</p>
           <p className="text-[24px] font-bold text-yellow-500">
             ₹{product.price.toLocaleString()}
-            <span className="text-xs text-gray-600 font-normal">/month</span>
+            <span className="text-xs text-gray-600 font-normal">/ months</span>
           </p>
         </div>
 
         {/* See Details Link */}
         <a
           href="/see-details"
-          className="text-lg font-semibold text-gray-900 hover:text-yellow-400 transition-colors inline-flex items-center gap-1"
+          className="text-lg font-medium text-gray-900 hover:text-yellow-400 transition-colors inline-flex items-center gap-1"
         >
           See details →
         </a>

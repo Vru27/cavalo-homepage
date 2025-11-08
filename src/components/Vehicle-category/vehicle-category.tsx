@@ -51,7 +51,7 @@ export default function VehicleTypesSection() {
   ]
 
   return (
-    <section className=" bg-gray-200 mt-50 px-20 py-12">
+    <section className=" bg-gray-200 mt-60 px-20 py-12">
       {/* Header */}
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-gray-900">
@@ -62,7 +62,7 @@ export default function VehicleTypesSection() {
       {/* Cards Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {categories.map((category) => (
-          <div key={category.id} className="bg-white shadow-md hover:shadow-lg transition-shadow p-6">
+          <div key={category.id} className="bg-white shadow-md transition-shadow p-6">
             {/* Card Header */}
             <div className="flex items-center gap-2 mb-5">
               <h2 className="text-lg font-bold text-gray-900">{category.title}</h2>

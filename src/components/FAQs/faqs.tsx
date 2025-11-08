@@ -86,7 +86,7 @@ export default function FAQsSection() {
                   <span className="text-lg font-semibold text-gray-900 pr-4">
                     {faq.question}
                   </span>
-                  <span className="flex-shrink-0">
+                  <span className="shrink-0">
                     {openId === faq.id ? (
                       <Minus className="w-6 h-6 text-gray-900" />
                     ) : (
